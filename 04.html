@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  
+
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
       <a class="navbar-brand" href="#">SuperShop</a>
@@ -20,7 +20,7 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -32,10 +32,19 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search mr-1"></i>Rechercher</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i
+              class="fa fa-search mr-1"></i>Rechercher</button>
         </form>
       </div>
     </nav>
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      Article ajouté avec succès.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4 mb-3">
         <div class="card">
@@ -117,6 +126,12 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/8db063dd2b.js" crossorigin="anonymous"></script>
+
+  <script>
+    setTimeout(function () {
+      $('.alert-success').alert('close');
+    }, 10000)
+  </script>
 
 </body>
 
